@@ -1,13 +1,13 @@
 package org.example.pokerjavafx;
 
 import javafx.application.Application;
+import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.StackPane;
-import javafx.scene.layout.VBox;
+import javafx.scene.layout.*;
+import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -23,6 +23,8 @@ public class HelloApplication extends Application {
         HBox cardDisplayHBox = new HBox(5);
         VBox allContent = new VBox(20);
         cardDisplayHBox.setLayoutY(100);
+
+        vBox.setBackground(new Background(new BackgroundFill(Color.WHITE, CornerRadii.EMPTY, Insets.EMPTY)));
         Image pokerBackground = new Image(getClass().getResourceAsStream("pokerbilde.jpg"));
 
         ImageView backgroundImageView = new ImageView(pokerBackground);

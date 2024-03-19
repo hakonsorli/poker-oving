@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b2ce39f-61e9-4f51-8cd8-4e37ddf102e9" name="Changes" comment="&quot; &quot;">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="2b2ce39f-61e9-4f51-8cd8-4e37ddf102e9" name="Changes" comment="Check All knapp">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pokerjavafx/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pokerjavafx/HelloApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -157,7 +156,7 @@
       <updated>1710796410944</updated>
       <workItem from="1710796412019" duration="1627000" />
       <workItem from="1710798061908" duration="3499000" />
-      <workItem from="1710843680250" duration="14195000" />
+      <workItem from="1710843680250" duration="14520000" />
     </task>
     <task id="LOCAL−00001" summary="Lagde et prosjekt uten javafx, måtte lage nytt.">
       <option name="closed" value="true" />
@@ -229,7 +228,14 @@
       <option name="presentableId" value="LOCAL−00010" />
       <updated>1710885704330</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL−00011" summary="Check All knapp">
+      <option name="closed" value="true" />
+      <created>1710887407229</created>
+      <option name="number" value="LOCAL−00011" />
+      <option name="presentableId" value="LOCAL−00011" />
+      <updated>1710887407229</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,7 +252,8 @@
     <MESSAGE value="Fjernet psvm og metoder jeg brukte for å sjekke om ting funket som de skulle, oppdaterte toString" />
     <MESSAGE value="noen tester" />
     <MESSAGE value="&quot; &quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot; &quot;" />
+    <MESSAGE value="Check All knapp" />
+    <option name="LAST_COMMIT_MESSAGE" value="Check All knapp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

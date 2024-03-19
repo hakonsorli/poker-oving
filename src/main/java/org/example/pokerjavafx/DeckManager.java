@@ -15,14 +15,14 @@ public class DeckManager {
          hand = p.dealHand(deck);
          return hand;
     }
-    void checkFlush(){
-         p.isFlush(hand);
+    boolean checkFlush(){
+         return p.isFlush(hand);
     }
     String checkHearts(){
          return p.getHearts(hand);
     }
-    void spadeQueen(){
-         p.containsSpadeQueen(hand);
+    boolean spadeQueen(){
+         return p.containsSpadeQueen(hand);
     }
     int getSum(){
          return p.getValue(hand);

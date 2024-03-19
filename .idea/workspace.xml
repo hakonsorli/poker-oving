@@ -4,24 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b2ce39f-61e9-4f51-8cd8-4e37ddf102e9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/pokerjavafx/HelloApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/pokerjavafx/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/pokerjavafx/PlayingCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/pokerjavafx/hello-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/pokerjavafx/pokerbilde.jpg" afterDir="false" />
+    <list default="true" id="2b2ce39f-61e9-4f51-8cd8-4e37ddf102e9" name="Changes" comment="Implementerte metoder fra DeckManager, tekstfelt til sjekker, VBOX og HBOX for å vise utdelte kort, og sjekkene (flush og div)">
+      <change afterPath="$PROJECT_DIR$/src/main/test/CheckTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/test/tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pokerjavafx/PlayingCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pokerjavafx/PlayingCard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,35 +46,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PlayingCard.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.PokerJavaFX [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.PokerJavaFX [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.PokerJavaFX [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.PokerJavaFX [package].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.PokerJavaFX [site].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.PokerJavaFX [test].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.PokerJavaFX [validate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.PokerJavaFX [verify].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.HelloApplication.executor": "Run",
+    "Application.PlayingCard.executor": "Run",
+    "JUnit.CheckTests.flushTest.executor": "Run",
+    "JUnit.CheckTests.spadeQueenTest.executor": "Run",
+    "JUnit.tests.fillDeckTest.executor": "Run",
+    "JUnit.tests.giveHandTest.executor": "Run",
+    "Maven.PokerJavaFX [clean].executor": "Run",
+    "Maven.PokerJavaFX [compile].executor": "Run",
+    "Maven.PokerJavaFX [install].executor": "Run",
+    "Maven.PokerJavaFX [package].executor": "Run",
+    "Maven.PokerJavaFX [site].executor": "Run",
+    "Maven.PokerJavaFX [test].executor": "Run",
+    "Maven.PokerJavaFX [validate].executor": "Run",
+    "Maven.PokerJavaFX [verify].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="Application.PlayingCard">
+}]]></component>
+  <component name="RunManager" selected="Application.HelloApplication">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.pokerjavafx.HelloApplication" />
       <module name="PokerJavaFX" />
@@ -101,25 +92,62 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlayingCard" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.PlayingCard" />
+    <configuration name="CheckTests.flushTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PokerJavaFX" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CheckTests" />
+      <option name="METHOD_NAME" value="flushTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckTests.spadeQueenTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PokerJavaFX" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CheckTests" />
+      <option name="METHOD_NAME" value="spadeQueenTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckTests.valueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PokerJavaFX" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CheckTests" />
+      <option name="METHOD_NAME" value="valueTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tests.giveHandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PokerJavaFX" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="tests" />
+      <option name="METHOD_NAME" value="giveHandTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PlayingCard" />
         <item itemvalue="Application.HelloApplication" />
+        <item itemvalue="JUnit.CheckTests.spadeQueenTest" />
+        <item itemvalue="JUnit.CheckTests.valueTest" />
+        <item itemvalue="JUnit.CheckTests.flushTest" />
+        <item itemvalue="JUnit.tests.giveHandTest" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -130,7 +158,52 @@
       <option name="presentableId" value="Default" />
       <updated>1710796410944</updated>
       <workItem from="1710796412019" duration="1627000" />
+      <workItem from="1710798061908" duration="3499000" />
+      <workItem from="1710843680250" duration="12789000" />
     </task>
+    <task id="LOCAL−00001" summary="Lagde et prosjekt uten javafx, måtte lage nytt.">
+      <option name="closed" value="true" />
+      <created>1710798134270</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1710798134270</updated>
+    </task>
+    <task id="LOCAL−00002" summary="Deckmanager for å bruke metoder i javafx">
+      <option name="closed" value="true" />
+      <created>1710852181980</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1710852181980</updated>
+    </task>
+    <task id="LOCAL−00003" summary="La inn bakgrunn og knapper">
+      <option name="closed" value="true" />
+      <created>1710852334552</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1710852334552</updated>
+    </task>
+    <task id="LOCAL−00004" summary="oppdaterte metoder">
+      <option name="closed" value="true" />
+      <created>1710854122412</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1710854122412</updated>
+    </task>
+    <task id="LOCAL−00005" summary="Lagde metoder i DM for å vise kortene">
+      <option name="closed" value="true" />
+      <created>1710885336045</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1710885336045</updated>
+    </task>
+    <task id="LOCAL−00006" summary="Implementerte metoder fra DeckManager, tekstfelt til sjekker, VBOX og HBOX for å vise utdelte kort, og sjekkene (flush og div)">
+      <option name="closed" value="true" />
+      <created>1710885589594</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1710885589594</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,5 +211,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Lagde et prosjekt uten javafx, måtte lage nytt." />
+    <MESSAGE value="Deckmanager for å bruke metoder i javafx" />
+    <MESSAGE value="La inn bakgrunn og knapper" />
+    <MESSAGE value="oppdaterte metoder" />
+    <MESSAGE value="Lagde metoder i DM for å vise kortene" />
+    <MESSAGE value="Implementerte metoder fra DeckManager, tekstfelt til sjekker, VBOX og HBOX for å vise utdelte kort, og sjekkene (flush og div)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementerte metoder fra DeckManager, tekstfelt til sjekker, VBOX og HBOX for å vise utdelte kort, og sjekkene (flush og div)" />
   </component>
 </project>

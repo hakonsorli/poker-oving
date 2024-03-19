@@ -1,7 +1,6 @@
 package org.example.pokerjavafx;
 
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
@@ -32,7 +31,6 @@ public class HelloApplication extends Application {
         backgroundImageView.setFitWidth(1000);
         backgroundImageView.setPreserveRatio(false);
 
-
         StackPane root = new StackPane();
         root.getChildren().add(backgroundImageView);
 
@@ -44,16 +42,20 @@ public class HelloApplication extends Application {
 
         Button checkSpadeQueen = new Button("Check spade queen");
         Text spadeQueenResult = new Text();
+
         Button checkSum = new Button("Check sum");
         Text checkSumResult = new Text();
 
         Button checkHearts = new Button("Check hearts");
         Text checkHeartsResult = new Text();
 
+        Button checkAll = new Button("Check All");
+
         checkFlush.setDisable(true);
         checkSpadeQueen.setDisable(true);
         checkSum.setDisable(true);
         checkHearts.setDisable(true);
+        checkAll.setDisable(true);
 
         dealHand.setOnAction(e -> {
             List<PlayingCard> hand = dm.dealHand();
@@ -62,7 +64,6 @@ public class HelloApplication extends Application {
                 StackPane cardGraphic = dm.cardGraphic(card);
                 cardDisplayHBox.getChildren().add(cardGraphic);
             }
-
             dealHandResult.setText("Hand dealt: " + hand.toString());
             checkFlushResult.setText(" ");
             spadeQueenResult.setText(" ");
@@ -72,9 +73,8 @@ public class HelloApplication extends Application {
             checkSpadeQueen.setDisable(false);
             checkSum.setDisable(false);
             checkHearts.setDisable(false);
-
+            checkAll.setDisable(false);
         });
-
 
         checkFlush.setOnAction(e -> {
             boolean isFlush = dm.checkFlush();
@@ -84,23 +84,31 @@ public class HelloApplication extends Application {
         checkSpadeQueen.setOnAction(e -> {
             boolean hasSpadeQueen= dm.spadeQueen();
             spadeQueenResult.setText("Spade queen in hand: " + hasSpadeQueen);
-
-
         });
+
         checkSum.setOnAction(e -> {
             int sum = dm.getSum();
             checkSumResult.setText("Sum: " + sum);
-
-
         });
+
         checkHearts.setOnAction(e -> {
             String heart = dm.checkHearts();
             checkHeartsResult.setText("Hearts: " + heart);
-
+        });
+        checkAll.setOnAction(e -> {
+            boolean isFlush = dm.checkFlush();
+            checkFlushResult.setText("Is flush: " + isFlush);
+            boolean hasSpadeQueen= dm.spadeQueen();
+            spadeQueenResult.setText("Spade queen in hand: " + hasSpadeQueen);
+            int sum = dm.getSum();
+            checkSumResult.setText("Sum: " + sum);
+            String heart = dm.checkHearts();
+            checkHeartsResult.setText("Hearts: " + heart);
 
         });
+
         vBox.getChildren().addAll(dealHand,dealHandResult,checkFlush, checkFlushResult, checkSpadeQueen, spadeQueenResult,
-                checkHearts, checkHeartsResult, checkSum, checkSumResult);
+                checkHearts, checkHeartsResult, checkSum, checkSumResult, checkAll);
 
         allContent.getChildren().addAll(vBox, cardDisplayHBox);
         root.getChildren().addAll(allContent);
@@ -111,7 +119,6 @@ public class HelloApplication extends Application {
         stage.setScene(scene);
         stage.show();
     }
-
     public static void main(String[] args) {
         launch();
     }

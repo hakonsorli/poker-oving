@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b2ce39f-61e9-4f51-8cd8-4e37ddf102e9" name="Changes" comment="Implementerte metoder fra DeckManager, tekstfelt til sjekker, VBOX og HBOX for å vise utdelte kort, og sjekkene (flush og div)">
-      <change afterPath="$PROJECT_DIR$/src/main/test/CheckTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/test/tests.java" afterDir="false" />
+    <list default="true" id="2b2ce39f-61e9-4f51-8cd8-4e37ddf102e9" name="Changes" comment="&quot; &quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pokerjavafx/PlayingCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pokerjavafx/PlayingCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pokerjavafx/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pokerjavafx/HelloApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +64,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -159,7 +157,7 @@
       <updated>1710796410944</updated>
       <workItem from="1710796412019" duration="1627000" />
       <workItem from="1710798061908" duration="3499000" />
-      <workItem from="1710843680250" duration="12789000" />
+      <workItem from="1710843680250" duration="14195000" />
     </task>
     <task id="LOCAL−00001" summary="Lagde et prosjekt uten javafx, måtte lage nytt.">
       <option name="closed" value="true" />
@@ -203,7 +201,35 @@
       <option name="presentableId" value="LOCAL−00006" />
       <updated>1710885589594</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL−00007" summary="Fjernet psvm og metoder jeg brukte for å sjekke om ting funket som de skulle, oppdaterte toString">
+      <option name="closed" value="true" />
+      <created>1710885661893</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1710885661893</updated>
+    </task>
+    <task id="LOCAL−00008" summary="noen tester">
+      <option name="closed" value="true" />
+      <created>1710885676100</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1710885676100</updated>
+    </task>
+    <task id="LOCAL−00009" summary="noen tester">
+      <option name="closed" value="true" />
+      <created>1710885687895</created>
+      <option name="number" value="LOCAL−00009" />
+      <option name="presentableId" value="LOCAL−00009" />
+      <updated>1710885687895</updated>
+    </task>
+    <task id="LOCAL−00010" summary="&quot; &quot;">
+      <option name="closed" value="true" />
+      <created>1710885704330</created>
+      <option name="number" value="LOCAL−00010" />
+      <option name="presentableId" value="LOCAL−00010" />
+      <updated>1710885704330</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +243,20 @@
     <MESSAGE value="oppdaterte metoder" />
     <MESSAGE value="Lagde metoder i DM for å vise kortene" />
     <MESSAGE value="Implementerte metoder fra DeckManager, tekstfelt til sjekker, VBOX og HBOX for å vise utdelte kort, og sjekkene (flush og div)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementerte metoder fra DeckManager, tekstfelt til sjekker, VBOX og HBOX for å vise utdelte kort, og sjekkene (flush og div)" />
+    <MESSAGE value="Fjernet psvm og metoder jeg brukte for å sjekke om ting funket som de skulle, oppdaterte toString" />
+    <MESSAGE value="noen tester" />
+    <MESSAGE value="&quot; &quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot; &quot;" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/pokerjavafx/HelloApplication.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

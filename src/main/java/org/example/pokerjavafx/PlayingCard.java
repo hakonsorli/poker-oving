@@ -8,18 +8,6 @@ import java.util.stream.IntStream;
 public class PlayingCard {
     public final char suit;
     public int value;
-
-    public static void main(String[] args) {
-        PlayingCard deck = new PlayingCard(' ', 0);
-        char[] suit ={'S', 'H', 'D', 'H'};
-        int[] values={1,2,3,4,5,6,7,8,9,10,11,12,13};
-        List<PlayingCard> usableDeck = deck.makeDeck(suit, values);
-        List<PlayingCard> dealtHand = deck.dealHand(usableDeck);
-        System.out.println(dealtHand.toString());
-        deck.checkAll(dealtHand);
-
-    }
-
     public PlayingCard(char suit, int value) {
         this.suit = suit;
         this.value = value;
@@ -59,15 +47,6 @@ public class PlayingCard {
         return dealtHand.stream()
                 .anyMatch(card -> card.suit == 'S' && card.value == 12);
     }
-    public String checkAll(List<PlayingCard> dealtHand){
-        System.out.println(isFlush(dealtHand));
-        System.out.println(getValue(dealtHand));
-        System.out.println(getHearts(dealtHand));
-        System.out.println(containsSpadeQueen(dealtHand));
-        return " ";
-
-    }
-
     public char getSuit() {
         return suit;
     }
@@ -79,9 +58,6 @@ public class PlayingCard {
 
     @Override
     public String toString() {
-        return "PlayingCard{" +
-                "suit=" + suit +
-                ", value=" + value +
-                '}';
+        return "Card: " + suit + value;
     }
 }
